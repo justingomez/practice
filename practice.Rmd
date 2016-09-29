@@ -1,0 +1,19 @@
+---
+title: "Eli Sucks"
+author: "Paul Harmon"
+date: "September 29, 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Sasquatch is real!
+
+```{r car}
+if (!require(cars)){install.packages("car")}
+plot(cars$speed, cars$dist, pch = 20)
+abline(lm(cars$dist~cars$speed), col = "green", lwd =2)
+```
+
